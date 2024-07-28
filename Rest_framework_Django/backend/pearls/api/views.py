@@ -27,7 +27,7 @@ def product(request, *args, **kwargs):
             serialized = ProductSerializer(data=request.data, many=True)
         else:
             serialized = ProductSerializer(data=request.data)
-        if serialized.is_valid():
+        if serialized.is_valid(raise_exception=True):
             serialized.save()
             return Response(serialized.data)
         
