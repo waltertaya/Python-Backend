@@ -7,7 +7,7 @@ def search_name():
 
     hashtable = json.loads(json_data)
 
-    x = input('Enter name to be searche in the database: ')
+    x = input('Enter name to be search in the database: ')
 
     hash_code = hashAlgorithm(x)
 
