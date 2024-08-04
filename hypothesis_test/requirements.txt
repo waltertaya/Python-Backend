@@ -1,0 +1,4 @@
+attrs==24.1.0
+exceptiongroup==1.2.2
+hypothesis==6.108.6
+sortedcontainers==2.4.0
