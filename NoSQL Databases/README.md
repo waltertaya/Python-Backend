@@ -10,5 +10,5 @@
 
 ## Author
 
-- (waltertaya)[https://www.github.com/waltertaya]
+- [waltertaya](https://www.github.com/waltertaya)
 
