@@ -2,7 +2,7 @@ from flask import Flask
 from pymongo import MongoClient
 
 def connect_db():
-    uri = 'mongodb+srv://ochiengwalter02:walter8236@waltertayadb.y2nbk2w.mongodb.net/'
+    uri = 'mongodb+srv://<username>:<password>@waltertayadb.y2nbk2w.mongodb.net/'
     try:
         client = MongoClient(uri)
         # db = client['movies-db']
