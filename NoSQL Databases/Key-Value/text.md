@@ -9,19 +9,19 @@
 
 ## Redis Data Types
 1. Strings
-	name --> 'mario'
-	age  --> '30'
+	- name --> 'mario'
+	- age  --> '30'
 2. Sets
-	names --> {'mario', 'taya', 'brett'}
+	- names --> {'mario', 'taya', 'brett'}
 3. Hashes
-	book --> {
+	- book --> {
 		   title: 'The inception'
 		   genre: 'Science fiction'
 		  }
 4. Lists
-	names --> {'taya', 'brett', 'taya', 'cooper'}
+	- names --> {'taya', 'brett', 'taya', 'cooper'}
 5. Sorted sets
-	names --> {
+	- names --> {
 		    'taya': 1,
 		    'brett': 2,
 		    'cooper': 3
