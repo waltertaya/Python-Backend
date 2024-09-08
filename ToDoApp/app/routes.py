@@ -21,7 +21,7 @@ def register_routes(app):
         if not data or not data.get('email') or not data.get('password'):
             return jsonify({"message": "Email and password are required"}), 400
 
-        hashed_password = generate_password_hash(data['password'], method='sha256')
+        hashed_password = generate_password_hash(data['password'])
         new_user = User(
             username=data['username'],
             name=data['name'],
