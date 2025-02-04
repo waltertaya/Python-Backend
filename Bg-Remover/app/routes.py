@@ -2,6 +2,7 @@ import base64
 
 from rembg import remove
 from PIL import Image
+import io
 
 from flask import request, jsonify
 
@@ -16,10 +17,11 @@ def register_routes(app):
             f.write(img_data)
         
         input_path = 'image.png'
-        output_path = 'output.png'
-        remove(input_path, output_path)
+        with open(input_path, "rb") as f:
+            input_data = f.read()
 
-        with open(output_path, 'rb') as f:
-            output_img = f.read()
-        
-        return jsonify({'image': base64.b64encode(output_img).decode('utf-8')})
+        # input_data = Image.open(io.BytesIO(img_data))
+
+        output_data = remove(input_data)
+
+        return jsonify({'image': base64.b64encode(output_data).decode('utf-8')})
